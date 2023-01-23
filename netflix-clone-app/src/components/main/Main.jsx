@@ -13,7 +13,6 @@ const Main = () => {
             setMovies(responce.data.results)
         })
     }, [])
-    console.log(movie);
 
   return (
     <ImgHeader movie={movie}/>
