@@ -14,7 +14,7 @@ const LeftMovieHeader = (props) => {
           </button>
         </div>
         <p className='text-gray-400 text-sm'>Realesed: {props.movie?.release_date}</p>
-        <p className='w-full md:max-w-[70%] lg:max-w-[50%] xl:max-w-[35%] text-gray-200'>{truncateString(props.movie?.overview, 150)}</p>
+        <p className='w-full md:max-w-[70%] lg:max-w-[50%] xl:max-w-[35%] text-gray-200'>{truncateString(props.movie?.overview, 250)}</p>
       </div>
   )
 }
