@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import requests from '../../request/Requests'
+import ImgHeader from './ImgHeader'
 
 const Main = () => {
     const [movies, setMovies] = useState([])
@@ -15,11 +16,7 @@ const Main = () => {
     console.log(movie);
 
   return (
-    <div className='w-full h-[550px] text-white'>
-      <div className='w-full h-full'>
-        <img className='w-full h-full object-cover' src={`https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`} alt={movie?.title} />
-      </div>
-    </div>
+    <ImgHeader movie={movie}/>
   )
 }
 
