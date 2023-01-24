@@ -2,8 +2,10 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import RowItem from "./RowItem";
 
+
 const Row = ({ title, fetchURL }) => {
   const [movies, setMovies] = useState([]);
+  
 
   useEffect(() => {
     axios.get(fetchURL).then((responce) => {
